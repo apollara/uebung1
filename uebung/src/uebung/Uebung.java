@@ -7,9 +7,12 @@ public class Uebung {
 		
 			 System.out.println(
 			 (17+4)*3==42?"tatsaechlich gleich":"unterschiedlich");
+			 System.out.println(Wahroderfalsch());
 			
 			 }
-		
+		static boolean Wahroderfalsch(){
+			return 4 ==4 && 8 == 5;
+		}
 	}
 
 
