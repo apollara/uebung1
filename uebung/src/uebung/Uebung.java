@@ -4,7 +4,7 @@ public class Uebung {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		fibfol(35);
+		collatz(6);
 		}
 			 static int quadrat(int x){return x*x;}
 			
@@ -32,5 +32,12 @@ public class Uebung {
 				k = k-1;
 			}
 			System.out.print("0");
+		}
+		static void collatz(int c)
+		{int k = 1;
+			if (c<=0){System.out.print("Nicht möglich");}
+		else if(c%2 == 0){ k = c/2;}
+		else {k = c*3+1;}
+		collatz(k);
 		}
 }
